@@ -6,7 +6,7 @@ export function DefaultLayout() {
   return (
     <>
       <Header />
-      <Box width="100%" maxW={1360} mx="auto" px="2">
+      <Box width="100%" maxW={920} mx="auto" px="2">
         <Outlet />
       </Box>
     </>

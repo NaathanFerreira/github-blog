@@ -1,16 +1,17 @@
 import { Box, SimpleGrid } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { useGithubContext } from "../../../hooks/useGithubContext";
 import { PostCard } from "./PostCard";
 
 export function PostList() {
-  const fakeArr = [1, 2, 3, 4];
+  const { posts } = useGithubContext();
 
   return (
     <SimpleGrid columns={2} gap={8} my="2rem">
-      {fakeArr.map((post) => {
+      {posts.items?.map((post) => {
         return (
-          <Link to="/post/1">
-            <PostCard />
+          <Link to={`/post/${post.number}`} key={post.id}>
+            <PostCard post={post} />
           </Link>
         );
       })}

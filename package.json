@@ -13,10 +13,14 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@fontsource/nunito": "^4.5.11",
+    "axios": "^1.2.1",
+    "date-fns": "^2.29.3",
     "framer-motion": "^7.10.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.0",
     "react-icons": "^4.7.1",
+    "react-markdown": "^8.0.4",
     "react-router-dom": "^6.5.0"
   },
   "devDependencies": {

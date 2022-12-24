@@ -1,9 +1,12 @@
 import { Flex, Text } from "@chakra-ui/react";
+import { useGithubContext } from "../../hooks/useGithubContext";
 import { PostList } from "./components/PostList";
 import { SearchForm } from "./components/SearchForm";
 import { UserProfileCard } from "./components/UserProfileCard";
 
 export function Home() {
+  const { posts } = useGithubContext();
+
   return (
     <Flex direction="column" mt="-100px">
       <UserProfileCard />
@@ -12,7 +15,7 @@ export function Home() {
           Publicações
         </Text>
         <Text fontSize=".9rem" color="gray.400">
-          6 publicações
+          {posts.total_count} publicações
         </Text>
       </Flex>
       <SearchForm />

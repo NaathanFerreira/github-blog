@@ -1,4 +1,4 @@
-<h1 style="text-align: center; font-weight: bold;">RocketShoes</h1>
+<h1 style="text-align: center; font-weight: bold;">Github Blog</h1>
 
 ## Demo 📸
 
